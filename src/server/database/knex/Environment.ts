@@ -1,6 +1,5 @@
 import { Knex } from 'knex';
 import path from 'path';
-import { number } from 'yup';
 
 
 export const production: Knex.Config = {
@@ -42,7 +41,7 @@ export const development: Knex.Config = {
     database: process.env.DATABASE_NAME,
     password: process.env.DATABASE_PASSWORD,
     port: Number(process.env.DATABASE_PORT) ,
-    ssl: {rejectUnauthorized: true },
+    
 
   },
   

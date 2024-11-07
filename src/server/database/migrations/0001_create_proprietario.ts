@@ -34,5 +34,6 @@ export async function down(knex: Knex) {
     .dropTable(ETableNames.proprietario)
     .then(() => {
       console.log(`# Dropped table ${ETableNames.proprietario}`);
+    // eslint-disable-next-line linebreak-style
     });
 }
